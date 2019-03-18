@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dong.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @dong.url %>
+</p>
+
+<%= link_to 'Edit', edit_dong_path(@dong) %> |
+<%= link_to 'Back', dongs_path %>

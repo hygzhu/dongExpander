@@ -1,0 +1,2 @@
+module DongsHelper
+end
