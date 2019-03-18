@@ -5,7 +5,7 @@
   <%= @dong.name %>
 </p>
 
-<%= image_tag @dong.image %>
+<%= image_tag @dong.image.variant(resize: "100x100") %>
 
 <%= link_to 'Edit', edit_dong_path(@dong) %> |
 <%= link_to 'Back', dongs_path %>
