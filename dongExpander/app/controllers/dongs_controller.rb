@@ -69,6 +69,6 @@ class DongsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dong_params
-      params.require(:dong).permit(:name, :url)
+      params.require(:dong).permit(:name, :image)
     end
 end

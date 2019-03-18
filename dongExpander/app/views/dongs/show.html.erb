@@ -5,10 +5,7 @@
   <%= @dong.name %>
 </p>
 
-<p>
-  <strong>Url:</strong>
-  <%= @dong.url %>
-</p>
+<%= image_tag @dong.image %>
 
 <%= link_to 'Edit', edit_dong_path(@dong) %> |
 <%= link_to 'Back', dongs_path %>

@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Url</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,7 +14,6 @@
     <% @dongs.each do |dong| %>
       <tr>
         <td><%= dong.name %></td>
-        <td><%= dong.url %></td>
         <td><%= link_to 'Show', dong %></td>
         <td><%= link_to 'Edit', edit_dong_path(dong) %></td>
         <td><%= link_to 'Destroy', dong, method: :delete, data: { confirm: 'Are you sure?' } %></td>
