@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :dongs
+  resources :expands
 
   
   get '/', to: 'dongs#index'
