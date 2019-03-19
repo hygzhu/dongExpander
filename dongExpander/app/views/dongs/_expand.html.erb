@@ -1,0 +1,8 @@
+<%= form_tag("/dongs/expand", method: "get") do %>
+
+  <%= label_tag(:text, "Text:") %>
+  <%= text_field_tag(:text) %>
+   
+  <%= submit_tag 'Expand Dong'%>
+
+<% end %>
