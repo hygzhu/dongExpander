@@ -3,6 +3,13 @@
 <p>
   <strong>Text:</strong>
   <%= @expand.text %>
+
+  <br/>
+
+  <% @images.each do |image| %>
+    <%= image_tag image.variant(resize: "25x25") %>
+  <% end %>
+
 </p>
 
 <%= link_to 'Edit', edit_expand_path(@expand) %> |

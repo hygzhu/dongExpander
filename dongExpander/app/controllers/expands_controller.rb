@@ -11,6 +11,24 @@ class ExpandsController < ApplicationController
   # GET /expands/1
   # GET /expands/1.json
   def show
+    characters = @expand.text.chars
+    #Set expanded dong
+    dongs = Dong.all
+    dongNames = dongs.map{|dong| dong.name}
+    @images = []
+    str = ""
+
+    while characters.size > 0
+        str += characters.shift
+        if !dongNames.index(str).nil?
+          @images.push(dongs[dongNames.index(str)].image)
+          str = ""
+        end
+    end
+
+    @text = str
+
+
   end
 
   # GET /expands/new
